@@ -1,0 +1,32 @@
+* {
+    padding: 0.5em 1.5em;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    padding: 0em 30%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+a {
+    box-shadow: 0 0 10px #ffffff;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #333131;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+a:focus {
+    background-color: #5a5353;
+    color: #ffffff;
+    transition: 0.5s;
+}

@@ -1,0 +1,12 @@
+div {
+    /* display: block; */
+    text-align: center;
+}
+
+img {
+    margin: 3em;
+    height: 600px;
+    width: 630px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #ffffff;
+}
