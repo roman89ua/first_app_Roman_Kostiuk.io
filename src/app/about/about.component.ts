@@ -8,7 +8,7 @@ import {imgUrl, facebookUrl} from '../app.constants';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  image = imgUrl;
+  image = imgUrl ;
   facebook = facebookUrl;
   
   constructor() { }
