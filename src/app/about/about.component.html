@@ -5,11 +5,16 @@
     <div class="about-info">
         <h3>Some information aboute me</h3>
         <ul>
-            <li>Was born in Delyatin in 27.08.1989</li>
+            <ul>
+                <li *ngFor="let aboteMe of infoAbout">
+                    {{aboteMe}}
+                </li>
+            </ul>
+            <!-- <li>Was born in Delyatin in 27.08.1989</li>
             <li>Graduated from the comprehensive school and the National Technical University of Oil and Gas</li>
             <li>By education - an automation engineer with eight years of experience</li>
             <li>Married. The daughter is 5 years old</li>
-            <li>I change my specialty - in process...</li>
+            <li>I change my specialty - in process...</li> -->
         </ul>
     </div>
 </section>

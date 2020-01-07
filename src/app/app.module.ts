@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { PictureService } from './picture.service';
 
 
 
@@ -22,7 +23,7 @@ import { AboutComponent } from './about/about.component';
     NgbModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [PictureService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
