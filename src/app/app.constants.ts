@@ -7,4 +7,4 @@ export const infoAbout = [
     'By education - an automation engineer with eight years of experience',
     'Married. The daughter is 5 years old',
     'I change my specialty - in process...'
-]
+];

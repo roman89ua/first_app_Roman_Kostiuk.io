@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PictureService } from './picture.service';
+import { CurrencyComponent } from './currency/currency.component';
 
 
 
@@ -16,6 +17,7 @@ import { PictureService } from './picture.service';
     AppComponent,
     HomeComponent,
     AboutComponent,
+    CurrencyComponent,
   ],
   imports: [
     BrowserModule,
