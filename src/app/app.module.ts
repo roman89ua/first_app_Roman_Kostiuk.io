@@ -14,7 +14,6 @@ import { AboutComponent } from './about/about.component';
 import { PictureService } from './picture.service';
 import { CurrencyComponent } from './currency/currency.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TableCurrencyComponent } from './table-currency/table-currency.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatTableModule} from '@angular/material/table';
@@ -25,8 +24,7 @@ import {MatTableModule} from '@angular/material/table';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    CurrencyComponent,
-    TableCurrencyComponent,
+    CurrencyComponent
   ],
   imports: [
     BrowserModule,
