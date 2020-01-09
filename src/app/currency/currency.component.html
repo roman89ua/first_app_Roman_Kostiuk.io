@@ -2,11 +2,13 @@
     <div>
         <h1>Currency rate NBU for today</h1>
     </div>
-
-
-    <div>
-        <table>
-
+    <div *ngIf="!isDataLoading">
+        <table mat-table [dataSource]="currensyList">
+            <ng-container cdkColumnDef="txt">
+                <th cdk-header-cell *cdkHeaderCellDef>Назва валюти</th>
+                <td cdk-cell *cdkCellDef="let row"> {{row.txt}} </td>
+                <td cdk-footer-cell *cdkFooterCellDef> User name </td>
+            </ng-container>
         </table>
-    </div>
+        </div*ngIf="!isDataLoading">
 </section>

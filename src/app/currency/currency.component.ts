@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PictureService } from '../picture.service';
+import { CurrencyInterface } from '../currency-interface';
 
 @Component({
   selector: 'app-currency',
@@ -6,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./currency.component.css']
 })
 export class CurrencyComponent implements OnInit {
+  currensyList: CurrencyInterface[] = [];
+  loading = false;
+  displayData = ['txt', 'cc', 'rate'];
 
-  constructor() { }
+  constructor(private pictureService: PictureService ){}
 
   ngOnInit() {
+    this.loading = true;
+    this.pictureService.getUrl()
+    .subscribe((data: any) => {
+      let url = data.currencyUrl;
+      this.pictureService.getCurrency(url)
+      .subscribe((cur: CurrencyInterface[])=>{
+        this.currensyList = cur;
+        this.loading = false;
+      });
+    });
   }
-
 }
