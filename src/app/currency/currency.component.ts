@@ -10,7 +10,7 @@ import { CurrencyInterface } from '../currency-interface';
 export class CurrencyComponent implements OnInit {
   currensyList: CurrencyInterface[] = [];
   loading = false;
-  displayData = ['txt', 'cc', 'rate'];
+  displayedColumns = ['txt', 'cc', 'rate'];
 
   constructor(private pictureService: PictureService ){}
 
@@ -23,6 +23,7 @@ export class CurrencyComponent implements OnInit {
       .subscribe((cur: CurrencyInterface[])=>{
         this.currensyList = cur;
         this.loading = false;
+        
       });
     });
   }

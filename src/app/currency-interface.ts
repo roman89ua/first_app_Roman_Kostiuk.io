@@ -3,5 +3,5 @@ export interface CurrencyInterface {
     "txt": string,
     "rate": number,
     "cc": string,
-    "exchangedate": Date
+    "exchangedate": string
 }

@@ -1,14 +1,26 @@
-<section>
-    <div>
-        <h1>Currency rate NBU for today</h1>
-    </div>
-    <div *ngIf="!isDataLoading">
-        <table mat-table [dataSource]="currensyList">
-            <ng-container cdkColumnDef="txt">
-                <th cdk-header-cell *cdkHeaderCellDef>Назва валюти</th>
-                <td cdk-cell *cdkCellDef="let row"> {{row.txt}} </td>
-                <td cdk-footer-cell *cdkFooterCellDef> User name </td>
+<h2>Currency rate NBU for today</h2>
+<div>
+
+    <mat-progress-bar *ngIf="loading" mode="buffer"></mat-progress-bar>
+    <div class="wrapper" *ngIf="!loading">
+
+        <table mat-table [dataSource]="currensyList" class="mat-elevation-z8">
+
+            <ng-container matColumnDef="txt">
+                <th mat-header-cell *matHeaderCellDef> Назва </th>
+                <td mat-cell *matCellDef="let element"> {{element.txt}} </td>
             </ng-container>
+
+            <ng-container matColumnDef="cc">
+                <th mat-header-cell *matHeaderCellDef> Абревіатура </th>
+                <td mat-cell *matCellDef="let element"> {{element.cc}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="rate">
+                <th mat-header-cell *matHeaderCellDef> Значення </th>
+                <td mat-cell *matCellDef="let element"> {{element.rate}} </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
         </table>
-        </div*ngIf="!isDataLoading">
-</section>
+        <!-- <app-table-currency></app-table-currency> -->
