@@ -1,5 +1,5 @@
-export const imgUrl = "https://i.ibb.co/Gt5Pbf0/romankostiuk.jpg";//my photo
-export const facebookUrl = "https://www.facebook.com/yuliabolhak?ref=bookmarks"; // my facebook page
+export const imgUrl = 'https://i.ibb.co/Gt5Pbf0/romankostiuk.jpg'; // my photo
+export const facebookUrl = 'https://www.facebook.com/yuliabolhak?ref=bookmarks'; // my facebook page
 
 export const infoAbout = [
     'Was born in Delyatin in 27.08.1989',
